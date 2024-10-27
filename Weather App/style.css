@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a6b1e1;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: #1d1e2c;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+div.interact{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+div.card{
+    background-color: #dcd6f7;
+    width: 800px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+div.empty{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div.interact{
+        width: 50%;
+    }
+}
+
+div.icon img{
+    width: 300px;
+    height: 300px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: text;
+    width: 65%;
+}
+
+button{
+    width: 35px;
+    height: 30px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #D1D9E0;
+}
+div.weatherInfo{
+    margin-top: 10px;
+}
+p#errormsg{
+position: absolute;
+}
+p#errormsg.error{
+    position: absolute;
+    color: red;
+    font-size:10px;
+    font-family: sans-serif;
+    margin-top: 65px;
+    margin-right: 40px;
+}
+
+input.error{
+    width: 65%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 30px;
+    border: 2px red solid; 
+    outline: none;
+    cursor: text;
+}
+@media screen and (max-width:769px) {
+    
+    body{
+        font-size: 20px;
+    }
+    div.card{
+        width: 300px;
+        height: 80vh;
+    }
+    div.empty{
+        width: 200px;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div.interact{
+        display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 100%;
+    }
+    input{
+        width: 65%;
+    }
+    
+    div.weatherInfo{
+        margin-top: 0;
+    }
+    div.icon img{
+        width: 250px;
+        height: 250px;
+    }
+
+    p#errormsg.error{
+        position: absolute;
+        color: red;
+        font-size:10px;
+        font-family: sans-serif;
+        margin-top: 65px;
+        margin-right: 60px;
+    }
+    input.error{
+        border: 2px solid red;
+    }
+
+
+
+
+
+
+}

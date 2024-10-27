@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main class=>
+        <div class="card empty" >
+            <div class="interact">
+            <input type="text" id="city" placeholder="City">
+            <p id="errormsg"></p>
+            <button id="search" onclick="getWeather()"><img src="/images/search.svg" alt="Magnifying Glass"></button>
+        </div>
+            <div class="weatherInfo">
+                <div class="temp"></div>
+                <div class="icon"></div>
+                <p class="weather"></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="sandbox.js"></script>
+</html>
